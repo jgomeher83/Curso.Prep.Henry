@@ -1,0 +1,73 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo 
+estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+* `for`
+* `&&`, `||`, `!`
+
+RESPUESTA BUCKE FOR:
+
+'for' es un operador que permite realizar tareas repetitivas de manera automatica. Es decir, 
+si es necesario hacer una tarea 1000 veces, se hace uso de este operador para evitar realizarlo de
+manera manual. Es necesario conocer el punto de inicio (número desde el cual se comienza la tarea) 
+el punto final (número de veces que queremos que se realice la tarea) y opcionalmente podemos elegir
+el incremento (número que representa los pasos entre tareas). 
+
+Estructura:
+for (Punto inicio; Punto final; Pasos){
+    tarea a realizar
+}
+
+Ejemplo: Imprimir los números del 1 al 1000 pasando de 2 en 2 (es decir; sin imprimir los números pares)
+for (var i = 1; i < 1000; i = i + 2){
+    console.log(i)
+}
+Como se puede apreciar, al momento de definir el punto de inicio es necesario también definir la variable
+si no se ha definido con anterioridad.
+
+RESPUESTA &&:
+
+'&&' es un operador condicional (AND) que permite realizar tareas solo si dos valores cumplen una condición. Es 
+mutuamente excluyente, es decir, si un valor no cumple la condición, la tarea no se realiza 
+sin inmportar que el segundo si la cumpla su condicion. Para comparar los valores con la condición se puede hacer uso de
+operadores como los siguientes: menor que (<), menor o igual que (<=), mayor que (>), mayor o igual que (>=), igual (=)
+
+Estructura:
+if (valor 1 (operador) condicion1 && valor 2 (operador) condicion2)
+    tarea a realizar
+
+Ejemplo: Imprimir 'Hola Mundo' si a y b son mayores a 50
+var a = 3;
+var b = 59
+if (a > 50 && b > 50)
+    console.log('Hola Mundo')
+
+RESPUESTA ||:
+
+'||' es un operador condicional (OR) que permite realizar tareas si alguno de los valores cumple una condición. Es 
+no es mutuamente excluyente, es decir, si un valor no cumple la condición, la tarea si se realiza 
+siempre y cuando el segundo cumpla la condicion y viceversa. Para comparar los valores con la condición se puede hacer uso de
+operadores como los siguientes: menor que (<), menor o igual que (<=), mayor que (>), mayor o igual que (>=), igual (=)
+
+Estructura: 
+if (valor 1 (operador) condicion1 || valor 2 (operador) condicion2)
+    tarea a realizar
+
+Ejemplo: Imprimir 'Hola Mundo' si a ó b es mayor a 50
+var a = 3;
+var b = 59
+if (a > 50 || b > 50)
+    console.log('Hola Mundo')
+
+RESPUESTA !
+
+`!` es un operador condicional (NOT) que permite realizar tareas si la condición que se están negando se cumple. Este operador
+puede usarse tanto en condiciones verdaderas como negativas para invertirlas.
+
+Estructura: 
+if (valor != condicion) 
+    tarea a realizar
+
+Ejemplo: Imprimir 'Hola Mundo' si a es diferente del número 63
+var a = 90
+if (a != 63)
+    console.log('Hola Mundo')
