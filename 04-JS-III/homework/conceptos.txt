@@ -1,0 +1,16 @@
+Arrays: Los arrays son "listas" que permiten almacenar diferentes tipos
+ de elementos en ellas, como lo son objetos y cualquier tipo de variable. Es una
+ herramienta demasiado potente ya que facilita el almacenamiento de muchos tipos de
+ datos relacionados o no entre si. Por ejemplo si queremos guardar el nombre 
+ de todas las personas de un equipo de futbol, estas funcionarían perfecto. 
+
+ Los arrays son muy flexibles y acceder a sus elementos es relativamente facil. 
+ En muchos casos basta con recorrer los elementos de un array con un bucle for para acceder 
+ a cada uno de ellos, o solo a los que cumplan ciertos requisitos si es nuestra tarea. 
+
+ Para definir el bucle for para recorrer el array podemos usar la longitud del arreglo
+ (array), y para realizar modificaciones en estas podemos usar todas las funciones que 
+ JavaScript tiene para ellas, con las cuales podemos agregar o eliminar elementos,
+ modificarlos etc.
+
+ 
