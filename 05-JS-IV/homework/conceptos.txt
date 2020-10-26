@@ -1,0 +1,65 @@
+	* Objetos
+	* Propiedades
+	* Métodos
+	* Bucle `for…in`
+	* Notación de puntos vs notación de corchetes
+
+**DEFINICION OBJETOS:   
+Los objetos a diferencia de los arrays son arreglos que
+permiten almacenar información asociada a un valor que lo identifica o define, al igual 
+que lo hace un diccionario. Un diccionario tiene una palabra clave y su definición. 
+
+El potencial de los objetos está en que podemos almacenar no solo un valor para cada clave
+(definicion en el ejemplo del diccionario) si no que podemos alamcenar cualquier tipo de
+variable, arreglo, objetos o funciones (las cuales al estar contenidas en un objetos
+toman el nombre de metodos) dentro de estos.
+
+**PROPIEDADES DE UN OBJETO:
+Como lo mencionamos anteriormente los objetos estan compuestos por claves y un 
+contenido asociado a esta clave (El contenido como mencionamos pueden ser cadenas, 
+variables, arrays, metodos etc.). Las Propiedades son la cantidad de claves con su 
+respectivo contenido. Es decir que si un objeti tiene 3 claves con sus respectivo 
+contenido se dice que el objeti tiene 3 Propiedades.
+
+**MÉTODOS:
+Como ya mencionamos anteriormente, los objetos, dentro de una clave pueden contener
+funciones, pero al estar dentro de un objeto lo llamamos Métodos.
+
+**BUCLE `for…in`:
+Cuando es necesario acceder a las Propiedadesde un objeto, esto puede hacerse
+a travéz de un bucle. Debido a la forma que tienen los objetos, que permiten 
+contener muchos diferentes tipos de elementos, es neceario recurrir a una variacion
+del Bucle for para acceder a dichos elementos en tareas repetitivas. 
+
+const usuario = {
+    username: 'juan.perez',
+    password: 'loremipsumpwd123',
+    lovesJavascript: true,
+    favoriteNumber: 42
+};
+
+for (let clave in usuario){
+    console.log(clave);
+    console.log(usuario[clave]);
+}
+// username
+// 'juan.perez'
+// password
+// 'loremipsumpwd123'
+// lovesJavascript
+// true
+// favoriteNumber
+// 42
+
+El bucle recorre la lista a traves de todas las claves que contiene. Para acceder 
+al contenido de cada una de las Propiedadese, es necesario llamar al objeto y
+posteriormente usar notacion dot o corchetes indicando la clave, que en este caso 
+seran todas una a una, mientras el bucle recorre el objeto.
+
+NOTACION DE PUNTOS VS NOTACION DE CORCHETES:
+Como mencionamos anteriormente, acceder al contenido de cada clave puede realizarse
+de dos maneras, notacion dot (puntos) ó corchetes. En primera instancia se puede concluir
+que la primera es más practica y directa, pero como la mayoría de casos, siempre dependerá
+del problema que estemos tomando, ya que pueden generarse confusiones con una u otra. Es 
+decir que una será más adecuada, lo cual se puede comprender con la practica.
+
