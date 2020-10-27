@@ -1,0 +1,7 @@
+Funciones Callback: 
+
+Cuando creamos funciones, estamos acostumbrados a pasarle como argumentos, valores constantes o variables.
+JAVASCRIPT permite además de de estos argumentos, pasar funciones lo cual es una herramienta muy potente.
+Al poder pasar funciones como argumentos (aquí es donde estas funciones toman el nombre de callbacks) podemos 
+realizar infinidad de tareas de manera más eficiente como lo son iteraciones, donde debíamos declarar todos
+los pasos para el bucle.
