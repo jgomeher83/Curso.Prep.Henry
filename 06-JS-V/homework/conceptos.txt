@@ -1,0 +1,14 @@
+* `prototype`
+* _Constructors_ (de Clases)
+
+PROTOTYPE:
+
+Es la forma en que un objeto tiene acceso a métodos que están dentro de una clase
+o función. Cada vez que un objeto trata de acceder a un método, este se busca en el
+prototipo, y si no se encuentra, JAVASCRIPT buca en el prototipo del prototipo 
+hasta encontrarlo o devolver que no exite tal método.
+
+CONSTRUCTORS:
+
+Permiten inicializar variables y crear plantillas. Solo puede existir un constructor en
+una clase. 
